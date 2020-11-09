@@ -1,0 +1,16 @@
+Unrender License Agreement
+
+By using or installing this software, you agree to be bound by the terms of this Agreement. 
+
+I.   Unrender products are free for personal use, Commercial use is free also, but a donation or product sample is nice. Amazon.com or Ebworld.com gift certificates are always appreciated. About $40 is the going rate, but what ever you feel is appropriate for your usage is appreciated.
+
+II.  You may not reverse engineer, decompile, or disassemble any Unrender product.
+
+III. You may only redistribute Unrender products in there entirety (consisting of; license.txt,
+*_Readme.txt, Unrender_Link.url, and all other files included with the original.)  
+
+All Unrender products are copyright Zane Townsend.
+
+Please direct any questions or comments to ztownsend@hotmail.com
+
+http://www.Unrender.com/

@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/Planet/Planet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Level.gd" type="Script" id=3]
+
+[node name="Level" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 284.293, 52.3367 )
+mass = 50.0
+linear_velocity = Vector2( -5, -100 )
+linear_damp = 0.5
+
+[node name="Planet 1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 59.8732, 107.186 )
+
+[node name="Planet 2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 122.259, 54.4302 )
+
+[node name="Planet 3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 180.457, 102.999 )
+
+[node name="Planet 4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 237.399, 57.7798 )
+[connection signal="clicked" from="Player" to="." method="_on_Player_clicked"]
