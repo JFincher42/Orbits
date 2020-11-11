@@ -4,7 +4,8 @@ var held_object = null
 
 func _ready():
 	# Set the player to not moving yet
-	get_node("Player").mode = RigidBody2D.MODE_STATIC
+	#$Player.held = false
+	pass
 
 func _on_Player_clicked(object):
 	if !held_object:

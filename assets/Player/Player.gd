@@ -1,32 +1,32 @@
-extends RigidBody2D
-# extends CollisionShape2D
+extends Area2D
 
-# Have we clicked on the planet?
+# Signal for knowing if we were clicked
 signal clicked
 
-# Is it currently held by the player?
-var held = false
+# Starting position
+export(Vector2) var StartingPosition
 
-# Process user input
+# Velocity imparted by launcher
+export var Velocity = Vector2.ZERO 
+
+# State of the player sprite
+# 0: In place at beginning
+# 1: Held by the player
+# 2: Released and flying
+enum State {WAIT, HELD, FLYING}
+var state 
+
+func _ready():
+	position = StartingPosition
+	state = State.WAIT
+
+func _process(delta):
+	if state == State.FLY:
+		position += Velocity * delta
+
+# Translate a click into a click event
 func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == BUTTON_LEFT and event.pressed:
 			emit_signal("clicked", self)
 
-# Move the body if we're being held
-func _physics_process(delta):
-	if held:
-		global_transform.origin = get_global_mouse_position()
-
-# Pickup the object, but make it static so we don't process physics yet
-func pickup():
-	if not held:
-		mode = RigidBody2D.MODE_STATIC
-		held = true
-
-# Drop the object, possibly with some force from the mouse movement
-func drop(impulse=Vector2.ZERO):
-	if held:
-		mode = RigidBody2D.MODE_RIGID
-		apply_central_impulse(impulse)
-		held = false
