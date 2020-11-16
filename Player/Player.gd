@@ -22,11 +22,13 @@ func _ready():
 	
 func pickup():
 	if state == State.WAIT:
+		print("Player picked up")
 		state = State.HELD
 	
 # Drop the object, possibly with some force from the mouse movement
 func drop(impulse=Vector2.ZERO):
 	if state == State.HELD:
+		print("Player dropped with %s impulse", impulse)
 		state = State.FLYING
 		Velocity = impulse
 
