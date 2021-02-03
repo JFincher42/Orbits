@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/barren.png-8c95b85fcc001fa82c7914beb2f93aa4.stex"
+path="res://.import/barren.png-c673be0936a2163fe95bfec161bba935.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Planet/barren.png"
-dest_files=[ "res://.import/barren.png-8c95b85fcc001fa82c7914beb2f93aa4.stex" ]
+source_file="res://assets/images/barren.png"
+dest_files=[ "res://.import/barren.png-c673be0936a2163fe95bfec161bba935.stex" ]
 
 [params]
 

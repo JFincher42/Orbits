@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/fonts/13misa-title.tres" type="DynamicFont" id=1]
-[ext_resource path="res://assets/SceneSelectButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/UserInterface/SceneSelectButton.tscn" type="PackedScene" id=2]
+
 
 [node name="MainScreen" type="Control"]
 anchor_right = 1.0
