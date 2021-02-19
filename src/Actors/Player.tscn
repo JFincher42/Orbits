@@ -3,7 +3,6 @@
 [ext_resource path="res://assets/images/players/silver/a10000.png" type="Texture" id=1]
 [ext_resource path="res://src/Actors/Player.gd" type="Script" id=2]
 
-
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 20.0287
 height = 14.5179
